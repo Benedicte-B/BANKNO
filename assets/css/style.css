@@ -51,7 +51,7 @@ h3{
 #navbar{
     margin: 0;
     width: 100vw;
-    height: 7.5vw;
+    height: 15vh;
     background-color: rgb(17, 17, 17);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -63,12 +63,12 @@ h3{
 /*--HEADER > Barre navigation > Logo*/
 #headerImgLogo{
     width: 18vw;
-    height: 7.5vw;
+    height: auto;
 }
 .headerLogo{
-   display: flex;
-   align-items: center;
-   width: auto;
+    display: flex;
+    align-items: center;
+    width: auto;
 }
 /*--HEADER > Barre navigation > Liens*/
 .headerLiens a{
@@ -89,10 +89,10 @@ h3{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(7, 7vw);
     text-align: center;
-    background-image: url(../img/HEADER-web.png);
+    background-image: url(../img/HEADER.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 600px;
+    height: 100vh;
     color: white;
     font-family: 'Raleway';
 }
@@ -157,6 +157,9 @@ h3{
 #iconBurger {
     color: white;
     font-size: 2.5em;
+    display: none;
+}
+#menuburger{
     display: none;
 }
 
@@ -264,9 +267,9 @@ h3{
 }
 .AProposButton:hover a{
     background: -webkit-linear-gradient(to right, rgba(222,25,78), rgba(213,25,19));
-   -webkit-background-clip: text;
-   color: rgba(222,25,78);
-   transition-duration: 0.5s;
+    -webkit-background-clip: text;
+    color: rgba(222,25,78);
+    transition-duration: 0.5s;
 }
 /*--A PROPOS Contenu > Image*/
 .AProposImage{
@@ -454,9 +457,9 @@ h3{
 /*--INSPIRATIONS > Bouton Hover*/
 .InspirationButton:hover a{
     background: -webkit-linear-gradient(to right, #E94E1B, #D1505A);
-   -webkit-background-clip: text;
-   color: #E94E1B;
-   transition-duration: 0.5s;
+    -webkit-background-clip: text;
+    color: #E94E1B;
+    transition-duration: 0.5s;
 }
 .InspirationButton:hover{
     border:  #E94E1B solid 2px;
@@ -717,9 +720,9 @@ h3{
 }
 .buttonGreen:hover a{
     background: -webkit-linear-gradient(to right, #3AAA35, #008A35);
-   -webkit-background-clip: text;
-   color: #3AAA35;
-   transition-duration: 0.5s;
+    -webkit-background-clip: text;
+    color: #3AAA35;
+    transition-duration: 0.5s;
 }
 .buttonGreen:hover{
     border:  solid 3px green ;
@@ -733,8 +736,8 @@ h3{
     width: 300px;
     color: #fff;
     cursor:zoom-in;
-  }
-  .overlay {
+}
+.overlay {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -744,12 +747,12 @@ h3{
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-  }
-  .overlay:target {
+}
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  .popup {
+}
+.popup {
     margin: 70px auto;
     padding: 20px;
     background: #fff;
@@ -757,8 +760,8 @@ h3{
     width: 40%;
     position: relative;
     transition: all 5s ease-in-out;
-  }
-  .popup .close {
+}
+.popup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -767,10 +770,10 @@ h3{
     font-weight: bold;
     text-decoration: none;
     color: #333;
-  }
-  .content img{
-      width: 100%;
-  }
+}
+.content img{
+    width: 100%;
+}
 /*==============================CONTACT==============================*/
 /* CONTACT > Titre */
 .contactSection{
@@ -962,6 +965,9 @@ margin-bottom: 5%;
 .footerSeparator{
     display: none;
 }
+hr{
+    border : solid 0.2px white; 
+}
 /* FOOTER > Menu footer */
 .footerMenu{
     display: grid;
@@ -1103,7 +1109,9 @@ margin-bottom: 5%;
         grid-column: 4/5;
             width: 50px;
         }
-    
+    #menuburger{
+        display: block;
+    }
     #navbar .headerLiens{
         display: none;
     }
@@ -1296,12 +1304,12 @@ margin-bottom: 5%;
         transition: opacity 500ms;
         visibility: hidden;
         opacity: 0;
-      }
-      .overlayburger:target {
+    }
+    .overlayburger:target {
         visibility: visible;
         opacity: 1;
-      }
-      .popupburger {
+    }
+    .popupburger {
         margin: 70px 30px;
         padding: 20px;
         background: #fff;
@@ -1310,8 +1318,8 @@ margin-bottom: 5%;
         height: 50%;
         position: relative;
         transition: all 5s ease-in-out;
-      }
-      .popupburger .closeburger {
+    }
+    .popupburger .closeburger {
         position: absolute;
         top: 25px;
         right: 50px;
@@ -1320,25 +1328,25 @@ margin-bottom: 5%;
         font-weight: bold;
         text-decoration: none;
         color: #333;
-      }
-      #navbarburger{
-          list-style-type: none;
-      }
-      #navbarburger {
-          padding-top: 20%;
-          padding-bottom : 20%;
-          padding-left: 10%;
-          padding-right: 10%; 
-      }
-      #navbarburger li a{
-          text-decoration: none;
-          font-family: 'Raleway';
-          font-weight: 600;
-          font-size: 2.5em;
-          color: #2D2D2E;
-          text-align: center;
+    }
+    #navbarburger{
+        list-style-type: none;
+    }
+    #navbarburger {
+        padding-top: 20%;
+        padding-bottom : 20%;
+        padding-left: 10%;
+        padding-right: 10%; 
+    }
+    #navbarburger li a{
+        text-decoration: none;
+        font-family: 'Raleway';
+        font-weight: 600;
+        font-size: 2.5em;
+        color: #2D2D2E;
+        text-align: center;
         line-height: 1.7em;
-      }
+    }
 }
 /*=======A PROPOS = Media Queries (480px)=======*/
 @media screen and (max-width:480px) {
