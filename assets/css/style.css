@@ -89,7 +89,7 @@ h3{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(7, 7vw);
     text-align: center;
-    background-image: url(../img/HEADER.png);
+    background-image: url(../img/Header.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100vh;
